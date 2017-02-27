@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Homework1 - Nested layout - Zlatko Petkovski KNI169</string>
+    <string name="searchText">Enter search</string>
+    <string name="searchTitle">Search</string>
+    <string name="tagged_searches">Tagged searches</string>
+    <string name="save">Save</string>
+    <string name="edit">Edit</string>
+    <string name="tag_query">Tag query</string>
+    <string name="android_fp">Android FP</string>
+    <string name="clear_tags">Clear tags</string>
+    <string name="deitel">Deitel</string>
+    <string name="google">Google</string>
+    <string name="java_fp">JAVA FP</string>
+    <string name="iphone_fp">iPhone FP</string>
+</resources>

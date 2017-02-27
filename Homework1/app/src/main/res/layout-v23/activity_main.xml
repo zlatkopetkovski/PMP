@@ -1,0 +1,238 @@
+<android.support.v4.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.pmp.homework1.MainActivity"
+    android:scrollIndicators="right"
+    android:scrollbars="vertical"
+    android:scrollbarStyle="insideOverlay">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1"
+        tools:ignore="UselessParent">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:text="@string/searchText"
+            android:ems="10"
+            android:id="@+id/editText"
+            android:textAlignment="center"
+            tools:ignore="RtlHardcoded" />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:layout_width="257dp"
+                android:layout_height="wrap_content"
+                android:inputType="textPersonName"
+                android:ems="10"
+                android:id="@+id/editText2"
+                android:text="@string/tag_query"
+                android:layout_row="0"
+                android:layout_column="0" />
+
+            <Button
+                android:text="@string/save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/button"
+                tools:ignore="RtlHardcoded"
+                android:layout_row="0"
+                android:layout_column="4" />
+        </GridLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:background="@android:color/holo_orange_light"
+            android:layout_marginTop="30dp">
+
+            <TextView
+                android:text="@string/tagged_searches"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textAlignment="center" />
+
+            <android.support.v4.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:clipToPadding="false"
+                android:fillViewport="false"
+                android:isScrollContainer="true">
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:baselineAligned="false">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:text="@string/android_fp"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button10"
+                            tools:layout_width="match_parent"
+                            tools:shadowDx="0.1"
+                            tools:ignore="ButtonStyle"
+                            android:textAlignment="center"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:text="@string/edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button11"
+                            tools:shadowDx="0.1"
+                            tools:ignore="ButtonStyle,HardcodedText"
+                            tools:text="@string/edit" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:baselineAligned="false">
+
+                        <Button
+                            android:text="@string/deitel"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button23"
+                            tools:ignore="ButtonStyle"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:text="@string/edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button22"
+                            tools:ignore="ButtonStyle"
+                            tools:text="@string/edit" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:text="@string/google"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button14"
+                            tools:shadowDx="0.1"
+                            tools:ignore="ButtonStyle"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:text="@string/edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button13"
+                            tools:shadowDx="0.1"
+                            tools:ignore="ButtonStyle"
+                            tools:text="@string/edit" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:text="@string/iphone_fp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button16"
+                            tools:shadowDx="0.1"
+                            tools:ignore="ButtonStyle"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:text="@string/edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button15"
+                            tools:shadowDx="0.1"
+                            tools:ignore="ButtonStyle"
+                            tools:text="@string/edit" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:text="@string/java_fp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button18"
+                            tools:shadowDx="0.1"
+                            tools:ignore="ButtonStyle"
+                            tools:text="@string/java_fp"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:text="@string/edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button17"
+                            tools:shadowDx="0.1"
+                            tools:ignore="ButtonStyle,HardcodedText"
+                            tools:text="@string/edit" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Button
+                            android:text="Java HTP"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button20"
+                            tools:shadowDx="0.1"
+                            tools:ignore="ButtonStyle,HardcodedText"
+                            android:layout_weight="1" />
+
+                        <Button
+                            android:text="@string/edit"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/button19"
+                            tools:shadowDx="0.1"
+                            tools:ignore="ButtonStyle"
+                            tools:text="@string/edit" />
+                    </TableRow>
+                </TableLayout>
+            </android.support.v4.widget.NestedScrollView>
+        </LinearLayout>
+
+        <Button
+            android:text="@string/clear_tags"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/button3"
+            android:layout_marginTop="30dp" />
+    </LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
