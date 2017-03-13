@@ -13,6 +13,8 @@ import android.widget.ListAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -130,7 +132,8 @@ public class MainActivity extends AppCompatActivity {
             Button button = (Button) findViewById(R.id.idButton);
             listView.setVisibility(View.GONE);
             button.setVisibility(View.VISIBLE);
-            //txtCity.setVisibility(View.GONE);
+            TextView vkupnoPoeni = (TextView) findViewById(R.id.idTown);
+            vkupnoPoeni.setText("Total points:");
             button.setText("Start again");
             numQuestion = 0;
         }
